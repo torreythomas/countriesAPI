@@ -1,0 +1,26 @@
+{
+  "name": "countriesAPI",
+  "version": "1.0.0",
+  "description": "This is a restFUL API crafted with mongoDB, Express, and Node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torreythomas/countriesAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torreythomas/countriesAPI/issues"
+  },
+  "homepage": "https://github.com/torreythomas/countriesAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
