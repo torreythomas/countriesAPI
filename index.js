@@ -1,16 +1,22 @@
 const express = require("express");
+const parser = require("body-parser");
+const cors = require("cors");
 const app = express();
 
+app.use(cors());
+app.use(parser.urlencoded({ extended: true }));
+app.use(parser.json());
 
+const countriesRouter = require("./routes/countries");
 
+app.use("/countries", countriesRouter);
 
+app.get("/", (req, res) => {
+  res.redirect("/countries");
+});
 
-app.get("/", function(req, res) {
-    res.send("hello world");
-  });
-  
+app.set("port", process.env.PORT || 2000);
 
-
-app.listen(4000, () => {
-    console.log("app listening on port 4000");
-  });
+app.listen(app.get("port"), () =>
+  console.log(`✅ PORT: ${app.get("port")} 🌟`)
+);
