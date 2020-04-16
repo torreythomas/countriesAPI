@@ -1,10 +1,16 @@
-const Country = require("./models/country");
-const data = require("./db/data.json");
+const express = require("express");
+const app = express();
 
-Country.deleteMany({}).then(() => {
 
-    Country.create(data).then(countries=> {
-        console.log(countries)
-        process.exit();
-    })
-});
+
+
+
+app.get("/", function(req, res) {
+    res.send("hello world");
+  });
+  
+
+
+app.listen(4000, () => {
+    console.log("app listening on port 4000");
+  });
