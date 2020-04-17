@@ -1,4 +1,4 @@
 # Countries API
-This a restFUL API of countries using the public data of the Countries API.
-(https://restcountries.eu/rest/v2/all)
+This is an API of countries created by using the open-sourced data of the Rest Countries API.
+[API link](https://restcountries.eu/rest/v2/all)
 
